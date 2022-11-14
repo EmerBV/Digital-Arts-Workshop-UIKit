@@ -42,7 +42,11 @@ class HomeViewController: UIViewController {
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
         
-
+        // Iniciamos aquí la imágen principal
+        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        // El espacio para poner la imágen principal
+        homeFeedTable.tableHeaderView = headerView
+        
         configureNavigationBar()
         
     }

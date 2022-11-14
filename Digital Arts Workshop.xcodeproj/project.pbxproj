@@ -14,6 +14,7 @@
 		7964803C29211FF7007880AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7964803A29211FF7007880AB /* LaunchScreen.storyboard */; };
 		7964804A2921664A007880AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796480492921664A007880AB /* HomeViewController.swift */; };
 		7997A6702921AE2E0019374D /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7997A66F2921AE2E0019374D /* CollectionTableViewCell.swift */; };
+		7997A6722921C0EB0019374D /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7997A6712921C0EA0019374D /* HeroHeaderUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7964803D29211FF7007880AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		796480492921664A007880AB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7997A66F2921AE2E0019374D /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		7997A6712921C0EA0019374D /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				7997A66F2921AE2E0019374D /* CollectionTableViewCell.swift */,
+				7997A6712921C0EA0019374D /* HeroHeaderUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				7997A6702921AE2E0019374D /* CollectionTableViewCell.swift in Sources */,
 				7964803429211FF6007880AB /* MainTabBarViewController.swift in Sources */,
 				7964803029211FF6007880AB /* AppDelegate.swift in Sources */,
+				7997A6722921C0EB0019374D /* HeroHeaderUIView.swift in Sources */,
 				7964803229211FF6007880AB /* SceneDelegate.swift in Sources */,
 				7964804A2921664A007880AB /* HomeViewController.swift in Sources */,
 			);
