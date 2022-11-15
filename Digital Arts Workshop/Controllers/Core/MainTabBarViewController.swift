@@ -14,9 +14,9 @@ class MainTabBarViewController: UITabBarController {
         view.backgroundColor = .systemBackground
         
         let vc1 = UINavigationController(rootViewController: HomeViewController())
-        let vc2 = UINavigationController(rootViewController: HomeViewController())
-        let vc3 = UINavigationController(rootViewController: HomeViewController())
-        let vc4 = UINavigationController(rootViewController: HomeViewController())
+        let vc2 = UINavigationController(rootViewController: SearchViewController())
+        let vc3 = UINavigationController(rootViewController: ProfileViewController())
+        let vc4 = UINavigationController(rootViewController: CartViewController())
         
         vc1.tabBarItem.image = UIImage(systemName: "house")
         vc1.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
