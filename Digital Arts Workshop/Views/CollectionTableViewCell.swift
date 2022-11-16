@@ -17,7 +17,7 @@ class CollectionTableViewCell: UITableViewCell {
         layout.itemSize = CGSize(width: 140, height: 200)
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(ArtCollectionViewCell.self, forCellWithReuseIdentifier: ArtCollectionViewCell.identifier)
 
         return collectionView
     }()
@@ -44,7 +44,9 @@ class CollectionTableViewCell: UITableViewCell {
 
 extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArtCollectionViewCell.identifier, for: indexPath) as? ArtCollectionViewCell else {
+            return UICollectionViewCell()
+        }
         cell.backgroundColor = .systemGray
         cell.layer.cornerRadius = 10
         return cell

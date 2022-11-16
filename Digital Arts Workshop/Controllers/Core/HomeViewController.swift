@@ -45,7 +45,7 @@ class HomeViewController: UIViewController {
         homeFeedTable.dataSource = self
         
         // Iniciamos aquí la imágen principal
-        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
         // El espacio para poner la imágen principal
         homeFeedTable.tableHeaderView = headerView
         
@@ -74,6 +74,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for: indexPath) as? CollectionTableViewCell else {
             return UITableViewCell()
         }
+        
         return cell
     }
     
