@@ -7,10 +7,11 @@
 
 import UIKit
 
+// 1) Marco de la vista principal
 class HomeViewController: UIViewController {
     //private var headerView: HeroHeaderUIView?
     
-    let sectionTitles: [String] = ["Trending", "Top", "Browse by category"]
+    let sectionTitles: [String] = ["Trending Collections", "Popular", "Browse by category"]
     
     private func configureNavigationBar() {
         let size: CGFloat = 30
@@ -30,6 +31,7 @@ class HomeViewController: UIViewController {
         
     }
     
+    // 2) Declaramos una vista donde registrar la tabla de nuestra colección
     private let homeFeedTable: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(CollectionTableViewCell.self, forCellReuseIdentifier: CollectionTableViewCell.identifier)

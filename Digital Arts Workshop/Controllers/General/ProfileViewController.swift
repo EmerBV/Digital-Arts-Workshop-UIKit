@@ -11,7 +11,7 @@ class ProfileViewController: UIViewController {
     
     private let profileTableView: UITableView = {
         let tableView = UITableView()
-        tableView.register(ProfileTableViewCell.self, forCellReuseIdentifier: ProfileTableViewCell.identifier)
+        tableView.register(ProfileCollectionTableViewCell.self, forCellReuseIdentifier: ProfileCollectionTableViewCell.identifier)
         return tableView
     }()
 
@@ -42,23 +42,18 @@ class ProfileViewController: UIViewController {
 extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ProfileTableViewCell.identifier, for: indexPath) as? ProfileTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ProfileCollectionTableViewCell.identifier, for: indexPath) as? ProfileCollectionTableViewCell else {
             return UITableViewCell()
         }
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 300
     }
-    
-   
-    
-    
-    
    
 }

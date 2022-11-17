@@ -21,6 +21,10 @@
 		799FA3FD2922C979000BBFB1 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799FA3FC2922C979000BBFB1 /* CartViewController.swift */; };
 		799FA3FF2922C9B7000BBFB1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799FA3FE2922C9B7000BBFB1 /* SearchViewController.swift */; };
 		799FA4012922DE3E000BBFB1 /* ProfileTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799FA4002922DE3E000BBFB1 /* ProfileTableViewHeader.swift */; };
+		79CA77D62925684200B5DCE0 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA77D52925684100B5DCE0 /* StatsViewController.swift */; };
+		79CA77DA29256E1900B5DCE0 /* ProfileCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA77D929256E1900B5DCE0 /* ProfileCollectionTableViewCell.swift */; };
+		79CA77DD2925B38800B5DCE0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA77DC2925B38800B5DCE0 /* LoginViewController.swift */; };
+		79CA77DF2925B3A200B5DCE0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA77DE2925B3A200B5DCE0 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		799FA3FC2922C979000BBFB1 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		799FA3FE2922C9B7000BBFB1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		799FA4002922DE3E000BBFB1 /* ProfileTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewHeader.swift; sourceTree = "<group>"; };
+		79CA77D52925684100B5DCE0 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		79CA77D929256E1900B5DCE0 /* ProfileCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		79CA77DC2925B38800B5DCE0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		79CA77DE2925B3A200B5DCE0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 				799FA4002922DE3E000BBFB1 /* ProfileTableViewHeader.swift */,
 				794A5907292423AE001A76EB /* ProfileTableViewCell.swift */,
 				794A590929243F5D001A76EB /* ArtCollectionViewCell.swift */,
+				79CA77D929256E1900B5DCE0 /* ProfileCollectionTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,6 +123,7 @@
 		7964804629216428007880AB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				79CA77DB2925B35400B5DCE0 /* Onboarding */,
 				79648048292164ED007880AB /* Core */,
 				79648047292164DF007880AB /* General */,
 			);
@@ -133,10 +143,20 @@
 			children = (
 				7964803329211FF6007880AB /* MainTabBarViewController.swift */,
 				796480492921664A007880AB /* HomeViewController.swift */,
+				79CA77D52925684100B5DCE0 /* StatsViewController.swift */,
 				799FA3FE2922C9B7000BBFB1 /* SearchViewController.swift */,
 				799FA3FC2922C979000BBFB1 /* CartViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		79CA77DB2925B35400B5DCE0 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				79CA77DC2925B38800B5DCE0 /* LoginViewController.swift */,
+				79CA77DE2925B3A200B5DCE0 /* RegisterViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,13 +232,17 @@
 				7997A6702921AE2E0019374D /* CollectionTableViewCell.swift in Sources */,
 				7964803429211FF6007880AB /* MainTabBarViewController.swift in Sources */,
 				7964803029211FF6007880AB /* AppDelegate.swift in Sources */,
+				79CA77DD2925B38800B5DCE0 /* LoginViewController.swift in Sources */,
 				794A5908292423AE001A76EB /* ProfileTableViewCell.swift in Sources */,
 				799FA3FF2922C9B7000BBFB1 /* SearchViewController.swift in Sources */,
 				7997A6722921C0EB0019374D /* HeroHeaderUIView.swift in Sources */,
 				799FA3FD2922C979000BBFB1 /* CartViewController.swift in Sources */,
 				799FA3FB2922C8BF000BBFB1 /* ProfileViewController.swift in Sources */,
+				79CA77D62925684200B5DCE0 /* StatsViewController.swift in Sources */,
 				799FA4012922DE3E000BBFB1 /* ProfileTableViewHeader.swift in Sources */,
+				79CA77DF2925B3A200B5DCE0 /* RegisterViewController.swift in Sources */,
 				7964803229211FF6007880AB /* SceneDelegate.swift in Sources */,
+				79CA77DA29256E1900B5DCE0 /* ProfileCollectionTableViewCell.swift in Sources */,
 				794A590A29243F5D001A76EB /* ArtCollectionViewCell.swift in Sources */,
 				7964804A2921664A007880AB /* HomeViewController.swift in Sources */,
 			);
