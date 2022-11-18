@@ -25,10 +25,14 @@ class HomeViewController: UIViewController {
         navigationItem.titleView = middleView
         
         let logOutImage = UIImage(systemName: "rectangle.portrait.and.arrow.right")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: logOutImage, style: .done, target: self, action: nil)
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: logOutImage, style: .done, target: self, action: #selector(didTapSignOut))
         navigationController?.navigationBar.tintColor = .label
         
+    }
+    
+    @objc private func didTapSignOut() {
+        let vc = OnboardingViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     // 2) Declaramos una vista donde registrar la tabla de nuestra colección

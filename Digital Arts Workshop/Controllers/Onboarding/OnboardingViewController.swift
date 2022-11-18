@@ -25,10 +25,10 @@ class OnboardingViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Create account", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 24, weight: .bold)
-        button.backgroundColor = UIColor(red: 0.75, green: 0.75, blue: 0.80, alpha: 1.00)
+        button.backgroundColor = UIColor(red: 0.13, green: 0.51, blue: 0.89, alpha: 1.00)
         button.layer.masksToBounds = true
-        button.tintColor = .label
-        button.layer.cornerRadius = 30
+        button.tintColor = .white
+        button.layer.cornerRadius = 12
         return button
     }()
     
@@ -46,7 +46,7 @@ class OnboardingViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Login", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 14)
-        button.tintColor = UIColor(red: 29/255, green: 161/255, blue: 242/255, alpha: 1)
+        button.tintColor = UIColor(red: 0.13, green: 0.51, blue: 0.89, alpha: 1.00)
         return button
     }()
 
@@ -59,8 +59,21 @@ class OnboardingViewController: UIViewController {
         view.addSubview(promptLabel)
         view.addSubview(loginButton)
         
+        createAccountButton.addTarget(self, action: #selector(didTapCreateAccount), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
+        
         configureConstraints()
 
+    }
+    
+    @objc private func didTapCreateAccount() {
+        let vc = RegisterViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func didTapLogin() {
+        let vc = LoginViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     private func configureConstraints() {
@@ -80,7 +93,6 @@ class OnboardingViewController: UIViewController {
         let promptLabelConstraints = [
             promptLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -20),
             promptLabel.topAnchor.constraint(equalTo: createAccountButton.bottomAnchor, constant: 20)
-            
         ]
         
         let loginButtonConstraints = [

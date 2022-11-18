@@ -10,6 +10,8 @@
 		794A5908292423AE001A76EB /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794A5907292423AE001A76EB /* ProfileTableViewCell.swift */; };
 		794A590A29243F5D001A76EB /* ArtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794A590929243F5D001A76EB /* ArtCollectionViewCell.swift */; };
 		79630EF42926AE2E005A7DEF /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79630EF32926AE2E005A7DEF /* OnboardingViewController.swift */; };
+		79630EF62926E782005A7DEF /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79630EF52926E782005A7DEF /* StatsTableViewCell.swift */; };
+		79630EF82926E798005A7DEF /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79630EF72926E798005A7DEF /* CartTableViewCell.swift */; };
 		7964803029211FF6007880AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964802F29211FF6007880AB /* AppDelegate.swift */; };
 		7964803229211FF6007880AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964803129211FF6007880AB /* SceneDelegate.swift */; };
 		7964803429211FF6007880AB /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964803329211FF6007880AB /* MainTabBarViewController.swift */; };
@@ -32,6 +34,8 @@
 		794A5907292423AE001A76EB /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		794A590929243F5D001A76EB /* ArtCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectionViewCell.swift; sourceTree = "<group>"; };
 		79630EF32926AE2E005A7DEF /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		79630EF52926E782005A7DEF /* StatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
+		79630EF72926E798005A7DEF /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		7964802C29211FF6007880AB /* Digital Arts Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Arts Workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7964802F29211FF6007880AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7964803129211FF6007880AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				794A5907292423AE001A76EB /* ProfileTableViewCell.swift */,
 				794A590929243F5D001A76EB /* ArtCollectionViewCell.swift */,
 				79CA77D929256E1900B5DCE0 /* ProfileCollectionTableViewCell.swift */,
+				79630EF52926E782005A7DEF /* StatsTableViewCell.swift */,
+				79630EF72926E798005A7DEF /* CartTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,11 +245,13 @@
 				79CA77DD2925B38800B5DCE0 /* LoginViewController.swift in Sources */,
 				794A5908292423AE001A76EB /* ProfileTableViewCell.swift in Sources */,
 				799FA3FF2922C9B7000BBFB1 /* SearchViewController.swift in Sources */,
+				79630EF62926E782005A7DEF /* StatsTableViewCell.swift in Sources */,
 				7997A6722921C0EB0019374D /* HeroHeaderUIView.swift in Sources */,
 				799FA3FD2922C979000BBFB1 /* CartViewController.swift in Sources */,
 				799FA3FB2922C8BF000BBFB1 /* ProfileViewController.swift in Sources */,
 				79CA77D62925684200B5DCE0 /* StatsViewController.swift in Sources */,
 				799FA4012922DE3E000BBFB1 /* ProfileTableViewHeader.swift in Sources */,
+				79630EF82926E798005A7DEF /* CartTableViewCell.swift in Sources */,
 				79CA77DF2925B3A200B5DCE0 /* RegisterViewController.swift in Sources */,
 				7964803229211FF6007880AB /* SceneDelegate.swift in Sources */,
 				79CA77DA29256E1900B5DCE0 /* ProfileCollectionTableViewCell.swift in Sources */,
