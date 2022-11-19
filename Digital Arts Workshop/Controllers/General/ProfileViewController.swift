@@ -18,7 +18,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        //navigationItem.title = "Profile"
+        navigationItem.title = "Profile"
         view.addSubview(profileTableView)
         
         // Importo la vista de la cabecera

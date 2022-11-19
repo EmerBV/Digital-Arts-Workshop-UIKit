@@ -34,7 +34,7 @@ class CartTableViewCell: UITableViewCell {
             collectionUIImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
             collectionUIImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
             collectionUIImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
-            collectionUIImageView.widthAnchor.constraint(equalToConstant: 100),
+            collectionUIImageView.widthAnchor.constraint(equalToConstant: 50),
             collectionUIImageView.heightAnchor.constraint(equalToConstant: 100)
         ]
         

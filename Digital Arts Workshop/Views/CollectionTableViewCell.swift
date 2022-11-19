@@ -11,10 +11,12 @@ class CollectionTableViewCell: UITableViewCell {
 
     static let identifier = "CollectionTableViewCell"
     
+    //weak var delegate: CollectionTableViewCellDelegate?
+    
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: 140, height: 200)
+        layout.itemSize = CGSize(width: 180, height: 200)
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(ArtCollectionViewCell.self, forCellWithReuseIdentifier: ArtCollectionViewCell.identifier)

@@ -112,3 +112,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+
+//extension HomeViewController: CollectionTableViewCellDelegate {
+//    func collectionTableViewCellDelegate(_ cell: CollectionTableViewCell) {
+//        let vc = ArtDetailsViewController()
+//        self?.navigationController?.pushViewController(vc, animated: true)
+//    }
+//}

@@ -9,13 +9,13 @@ import UIKit
 
 class StatsViewController: UIViewController {
 
-    private let statsTitleLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Stats"
-        label.font = .systemFont(ofSize: 32, weight: .bold)
-        return label
-    }()
+    //private let statsTitleLabel: UILabel = {
+        //let label = UILabel()
+        //label.translatesAutoresizingMaskIntoConstraints = false
+        //label.text = "Stats"
+        //label.font = .systemFont(ofSize: 32, weight: .bold)
+        //return label
+    //}()
     
     private let statsTableView: UITableView = {
         let tableView = UITableView()
@@ -27,8 +27,8 @@ class StatsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        //navigationItem.title = "Stats"
-        view.addSubview(statsTitleLabel)
+        navigationItem.title = "Stats"
+        //view.addSubview(statsTitleLabel)
         view.addSubview(statsTableView)
         
         statsTableView.delegate = self
@@ -38,19 +38,20 @@ class StatsViewController: UIViewController {
     }
     
     private func configureConstraints() {
-        let statsTitleLabelConstraints = [
-            statsTitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            statsTitleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-        ]
+        //let statsTitleLabelConstraints = [
+            //statsTitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            //statsTitleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+        //]
         
         let statsTableViewConstraints = [
             statsTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            statsTableView.topAnchor.constraint(equalTo: statsTitleLabel.bottomAnchor, constant: 20),
+            //statsTableView.topAnchor.constraint(equalTo: statsTitleLabel.bottomAnchor, constant: 20),
+            statsTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             statsTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             statsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ]
         
-        NSLayoutConstraint.activate(statsTitleLabelConstraints)
+        //NSLayoutConstraint.activate(statsTitleLabelConstraints)
         NSLayoutConstraint.activate(statsTableViewConstraints)
     }
 
@@ -67,13 +68,6 @@ extension StatsViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
-    }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let defaultOffset = view.safeAreaInsets.top
-        let offset = scrollView.contentOffset.y + defaultOffset
-        
-        navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
     }
     
 }
